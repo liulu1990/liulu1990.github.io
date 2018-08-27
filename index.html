@@ -152,19 +152,19 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-article-title" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-hexo+github搭建博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/25/article-title/">搭建博客注意事项</a>
+      <a class="article-title" href="/2018/08/25/hexo+github搭建博客/">搭建博客注意事项</a>
     </h1>
   
 
         
-        <a href="/2018/08/25/article-title/" class="archive-article-date">
+        <a href="/2018/08/25/hexo+github搭建博客/" class="archive-article-date">
   	<time datetime="2018-08-25T14:12:29.306Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-25</time>
 </a>
         
@@ -173,13 +173,42 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="一、什么是Hexo"><a href="#一、什么是Hexo" class="headerlink" title="一、什么是Hexo"></a><strong>一、什么是Hexo</strong></h1><p>首先Hexo是一款基于Node.js的静态博客，它是由台湾的一位大学生写出来的，支持很多主题和Markdown,很炫酷并且也很好用，现在很多人都在使用；如果你想Geek一下，可以尝试一下自己搭建一款Hexo博客。</p>
-<h1 id="二、本地搭建Hexo"><a href="#二、本地搭建Hexo" class="headerlink" title="二、本地搭建Hexo"></a><strong>二、本地搭建Hexo</strong></h1><p>因为Hexo是静态博客，所以首先得在本地上搭建，网上的教程很多，诸位可自己百度，这里的重点是如何在Coding的演示平台上部署，所以只略说一下，不懂的各位可以看官网的Docs。</p>
+<h1 id="二、本地搭建Hexo"><a href="#二、本地搭建Hexo" class="headerlink" title="二、本地搭建Hexo"></a><strong>二、本地搭建Hexo</strong></h1><p>因为Hexo是静态博客，所以首先得在本地上搭建，网上的教程很多，诸位可自己百度不懂的各位可以看官网的Docs。</p>
 <ul>
-<li><p>需要安装<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Node.js</a>（Node安装目录不要更改）和<a href="https://git-scm.com/download" target="_blank" rel="noopener">Git</a></p>
+<li>需要安装<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Node.js</a>（Node安装目录不要更改）和<a href="https://git-scm.com/download" target="_blank" rel="noopener">Git</a></li>
+</ul>
+<p>(1)在C盘下新建一个文件夹名为blog<br>(2)右键任意地方选择git bash here 输入以下命令：</p>
+<ul>
+<li><p>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></p>
 </li>
-<li><p>右键任意地方，打开git bash，输入以下代码安装Hexo</p>
+<li><p>npm install -g hexo</p>
+</li>
+<li><p>hexo g    —–安装全局hexo</p>
+</li>
+<li><p>hexo -v  —–hexo是否已安装</p>
+</li>
+<li><p>cd blog 进入blog文件夹-右键打开选择git bash here 输入以下命令：</p>
+</li>
+<li><p>hexo init 初始化hexo</p>
+</li>
+<li><p>npm install</p>
+</li>
+<li><p>hexo server   本地搭建，在浏览器端输入localhost:4000看一下效果</p>
 </li>
 </ul>
+<h1 id="三、github"><a href="#三、github" class="headerlink" title="三、github"></a><strong>三、github</strong></h1><p>(1)ssh-keygen -t rsa -C “<a href="mailto:747129435@qq.com" target="_blank" rel="noopener">747129435@qq.com</a>“   —此处添加github邮箱<br>(2)cat /c/Users/apple/.ssh/id_rsa.pub   —-查看密钥<br>(3)hexo new post “article title”   —在post文件夹中新建一个markdown文章<br>(4)hexo g —先生成<br>(5)npm install hexo-deployer-git –save<br>(6)hexo d    —后部署<br>(7)hexo d -g    —先生成再部署</p>
+<p>##<strong>注意:在github上建立Repository name的名字: liulu1990.github.io</strong></p>
+<ul>
+<li><p>在_config.yml里找到Deploy </p>
+</li>
+<li><p>type: git</p>
+</li>
+<li><p>repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:liulu1990/liulu1990.github.io.git</p>
+</li>
+<li><p>branch: master</p>
+</li>
+</ul>
+<p>最后在地址栏输入：<a href="https://liulu1990.github.io" target="_blank" rel="noopener">https://liulu1990.github.io</a></p>
 
       
 
@@ -192,78 +221,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/25/article-title/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/25/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2018/08/25/hello-world/" class="archive-article-date">
-  	<time datetime="2018-08-25T14:02:19.721Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/25/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/08/25/hexo+github搭建博客/">展开全文 >></a>
         </p>
       
 
