@@ -273,12 +273,13 @@
 <li>千万别 点击 Node.js 的图标</li>
 <li>千万别 点击 Node.js 的图标<br>别问为什么，别点就是了。</li>
 </ul>
-<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>打开 Git Bash，依次输入以下命令，按回车：<br>`</p>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>打开 Git Bash，依次输入以下命令，按回车：</p>
 <ul>
 <li>npm config set registry <a href="https://registry.npm.taobao.org/" target="_blank" rel="noopener">https://registry.npm.taobao.org/</a></li>
 <li>npm config set loglevel http</li>
-<li>npm config set progress false<br>`<br>npm 的配置被存储在 ~/.npmrc，你可以随时改。</li>
+<li>npm config set progress false</li>
 </ul>
+<p>npm 的配置被存储在 ~/.npmrc，你可以随时改。</p>
 <h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><h2 id="npm-安装命令行小工具"><a href="#npm-安装命令行小工具" class="headerlink" title="npm 安装命令行小工具"></a><strong>npm 安装命令行小工具</strong></h2><p>装了 Node.js 之后我们就可以在 Git Bash 里面使用 node 和 npm 这两个命令了，试试看：</p>
 <ul>
 <li>which node</li>
@@ -550,8 +551,7 @@
 </li>
 </ul>
 <h1 id="三、github"><a href="#三、github" class="headerlink" title="三、github"></a><strong>三、github</strong></h1><p>(1)ssh-keygen -t rsa -C “<a href="mailto:747129435@qq.com" target="_blank" rel="noopener">747129435@qq.com</a>“   <code>---</code>此处添加github邮箱<br>(2)cat /c/Users/apple/.ssh/id_rsa.pub   <code>----</code>查看密钥<br>(3)hexo new post “article title”   <code>---</code>在post文件夹中新建一个markdown文章<br>(4)hexo g <code>---</code>先生成<br>(5)npm install hexo-deployer-git <code>--</code>save<br>(6)hexo d    <code>---</code>后部署<br>(7)hexo d -g    <code>---</code>部署后生成，然后在github上查看文件是否已提交</p>
-<p>##<strong>注意:在github上建立Repository name的名字: liulu1990.github.io</strong></p>
-<ul>
+<h2 id="注意-在github上建立Repository-name的名字-liulu1990-github-io"><a href="#注意-在github上建立Repository-name的名字-liulu1990-github-io" class="headerlink" title="注意:在github上建立Repository name的名字: liulu1990.github.io"></a><strong>注意:在github上建立Repository name的名字: liulu1990.github.io</strong></h2><ul>
 <li><p>在_config.yml里找到Deploy </p>
 </li>
 <li><p>type: git</p>
